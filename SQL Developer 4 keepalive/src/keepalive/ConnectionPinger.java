@@ -21,7 +21,7 @@ public class ConnectionPinger implements Runnable {
     public ConnectionPinger(Integer interval) {
         try {
             this.interval = interval;
-            if (this.interval < 60) {
+            if (this.interval < 1) {
                 LogMessage("WARNING", "Timeout is too low (less than 60 seconds).");
                 LogMessage("INFO", "Timeout set to default (600 seconds).");
                 this.interval = 600;

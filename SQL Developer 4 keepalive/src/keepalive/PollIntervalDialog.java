@@ -27,7 +27,7 @@ public class PollIntervalDialog extends JDialog {
     private Integer pollInterval;
 
     // minimal value for poll interval in seconds
-    private final Integer minPollInterval = 60;
+    private final Integer minPollInterval = 1;
 
     // maximal value for poll interval in seconds
     private final Integer maxPollInterval = 43200; //12h
